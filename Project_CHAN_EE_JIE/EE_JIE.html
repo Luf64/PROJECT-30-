@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chan Ee Jie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --snow-white: #f5faff;
+      --mountain-brown: #8b6f4e;
+      --light-tan: #d8c3a5;
+      --glass: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: url('images/boulderfest-lower-banner-1-atx.webp') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--snow-white);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 0;
+      background-color: #35363bd9;
+      padding-bottom: 1em;
+    }
+
+    header h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3em;
+      color: var(--light-tan);
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+
+    table, th, td {
+      border: 1px solid var(--light-tan);
+      padding: 0.5em;
+    }
+
+    nav {
+    
+      width: 100%;
+      background-color: rgba(25, 25, 32, 0.897);
+      margin-bottom: 0;
+      padding: 1em;
+      text-align: center;}
+
+    nav a {
+      position: sticky;
+      margin: 1em;
+      color: var(--light-tan);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      z-index: 1000;
+    }
+
+
+    nav a:hover {
+      color: var(--snow-white);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      padding: 2em;
+      background-color: rgba(56, 56, 56, 0.098);
+    }
+
+    section {
+      background: var(--glass);
+      padding: 1.5em;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      color: var(--light-tan);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+
+    ul.custom-list {
+      list-style: none;
+      padding-left: 1em;
+    }
+
+    ul.custom-list > li::before {
+      content: "🧗";
+      margin-right: 0.5em;
+    }
+
+    ul.custom-list li ul li::before {
+      content: "🎮";
+      margin-right: 0.5em;
+    }
+
+    .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      font-size: 0.9em;
+      background-color: rgba(25, 25, 32, 0.897);
+      color: var(--light-tan);}
+
+      section:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;}
+
+    .intro-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 1em;
+}
+
+.hero-image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border: 5px solid var(--light-tan);
+  border-radius: 12px;
+}
+
+.about-me {
+  margin-top: 1em;
+  max-width: 600px;
+  text-align: left;
+}
+
+
+.section-divider {
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  color: var(--light-tan);
+  background-color: rgba(25, 25, 32, 0.897);
+  font-family: 'Quicksand', sans-serif;
+}
+  </style>
+</head>
+<body>
+    <header>
+
+<nav class="nav" id="nav_bar1">
+      <a href="HOME.html">HOME</a>
+      <a href="NAUFAL.html">NAUFAL</a>
+      <a href="EE_JIE.html">EE JIE</a>
+      <a href="DINASH.html">DINASH</a>
+      <a href="YEW_ZHIAN.html">YEW ZHIAN</a>
+      <a href="RESOURCES_PAGE.html">RESOURCES</a>
+      <a href="FEEDBACK_PAGE.html">FEEDBACK</a>
+</nav>
+
+  <h1>Ee Jie's Life</h1>
+  <div class="intro-banner">
+    <img src="images/6111920367414135549.jpg" alt="Rock climbing photo" class="hero-image" />
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>I’m Ee Jie, and I'm 18 years old. I love to go rock climbing and also wish to make games in the future. Whether I’m reaching new heights or coding mechanics, I live for the grind and the creativity.</p>
+      <ul class="custom-list">
+        <li>Indoor Bouldering
+          <ul>
+            <li>Outdoor bouldering</li>
+            <li>Nature photography</li>
+          </ul>
+        </li>
+        <li>Game Dev
+          <ul>
+            <li>LuaU</li>
+            <li>Blender Modelling</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="section-divider">
+  <p>— More about me —</p>
+</div>
+
+  <main>
+
+    <section>
+      <h2>Learning Goals & Achievements</h2>
+      <table>
+        <tr><th>Year</th><th>Goal</th><th>Achievement</th></tr>
+        <tr><td>2023</td><td>Build first game</td><td>Released on itch.io</td></tr>
+        <tr><td>2024</td><td>Climb V7 outdoors</td><td>Completed in Hokkaido</td></tr>
+      </table>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Here’s what I’ve mastered and what I’m still working on:</p>
+      <ul>
+        <li>Game Dev: LuaU, Blender</li>
+        <li>Climbing: Dynos, heel hooks, crimps</li>
+        <li>Design: UI/UX, pixel art, level design</li>
+      </ul>
+    </section>
+
+    <section id="reflection">
+      <h2>Reflection</h2>
+      <p>My journey has been a mix of grit and growth. Climbing taught me resilience, game dev taught me patience. Every bug fixed and every route sent is a step forward.</p>
+    </section>
+  </main>
+
+  <section id="Climbing">
+      <h2>What's rock climbing like?</h2>
+      <p>For me, climbing isn't just climbing, it's something much more, it's my lifestyle, and it's what made me me.</p>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ul4UrswOa9A?si=Npms6JH0fNHakNMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+  </section>
+    
+  <footer>
+    <p>&copy;This is a group project for CCT1004</p>
+    <P>Made with Group GL-G</P>
+  </footer>
+</body>
+</html>
