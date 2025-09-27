@@ -27,7 +27,7 @@ line 134-138: section for embbed containing heading,paragraph and embbed link yt
 line 140-143: section for footer containing references, group name
 
 
-<!--NAUFAL.css-->
+/*NAUFAL.css*/
 * : basically the body containing imported font from google font and scroll behaviour so when you click the "click to know me better" 
      it will scroll you to the designated section smoothly. theres original margin and padding too, set to 0px/%
 .banner
