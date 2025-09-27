@@ -1,4 +1,5 @@
 <!--EE_JIE.html-->
+For my part, my HTML and CSS are both in one file, I will separate them into HTML part and CSS part explaination.
 HTML part
 Line 1: <!DOCTYPE html> - Declares this as an HTML5 document.
 Line 2: <html lang="en"> - Starts the HTML file and sets the language to English.
