@@ -1,54 +1,92 @@
 <!--YEW_ZHIAN.html-->
-Line 1: <!DOCTYPE html> defines this file as an HTML5 document.  
-Line 2: <html lang="en"> opens the HTML document, language is set to English.  
-Line 3: <head> starts the head section, which contains metadata and styles.  
-Line 4: <meta charset="UTF-8" /> ensures proper text encoding using UTF-8.  
-Line 5: <meta name="viewport" content="width=device-width, initial-scale=1.0" /> makes the page responsive to different screen sizes.  
-Line 6: <meta name="description" content="This is Yew Zhian's Profile Page" /> gives a short description for browsers and search engines.  
-Line 7: <link rel="stylesheet" href="YEW_ZHIAN.css" /> links to the external CSS file for styling.  
-Line 8: <link rel="icon" type="image/x-icon" href="images/dog.png" /> adds a favicon image for the browser tab.  
-Line 9: <title>Yew Zhian's Profile</title> sets the page title shown in the tab.  
-Line 10: </head> closes the head section.  
-Line 11: <body> begins the visible content of the webpage.  
-Line 12: <nav id="navbar"> creates the top navigation bar for page links.  
-Line 13: Inside the navbar, <a> tags link to Home, Members, Resources, and Feedback pages.  
-Line 14: <div class="overlay"></div> is reserved for overlay or design effects.  
-Line 15: </nav> closes the navigation bar.  
-Line 16: <h1 class="textcenter"> adds a centered welcome heading.  
-Line 17: <div class="sidebar"> creates a sidebar on the left side of the page.  
-Line 18: Inside the sidebar, <ul> contains list items <li> with links to each section of the page.  
-Line 19: Sidebar links include About Me, Goals & Achievements, Skills, Learning Journey, Future Plan, YouTube Channel, Video, Useful Links, and Bottom.  
-Line 20: </div> closes the sidebar.  
-Line 21: <main> begins the main content section of the profile.  
-Line 22: The first <section> contains About Me with a profile image and short introduction.  
-Line 23: The next <section> describes Learning Goals and Achievements with ordered and unordered lists.  
-Line 24: Another <section> explains Skills Acquired with a paragraph.  
-Line 25: A Reflection on Learning Journey section highlights personal growth.  
-Line 26: My Future Plan section includes a table showing a 22-week study plan.  
-Line 27: My Favourite YouTube Channel section shows an image, link, and embedded video.  
-Line 28: Video to Understand Program section embeds another YouTube tutorial.  
-Line 29: Useful Links section provides external learning resources such as Coursera, Udemy, FreeCodeCamp, and Codecademy.  
-Line 30: </main> closes the main content.  
-Line 31: <footer> begins the footer section.  
-Line 32: Footer includes References, Copyright, YouTube reference, and Contact email.  
-Line 33: </footer> closes the footer.  
-Line 34: </body> ends the page body.  
-Line 35: </html> ends the HTML document.  
-<!--YEW_ZHIAN.css-->
-Line 1: CSS begins with *{...} to reset styles, set global font, enable smooth scrolling, and add letter spacing.  
-Line 2: body{...} sets the background image, centers it, covers the screen, and adds padding.  
-Line 3: .sidebar{...} fixes the sidebar to the left, sets default width to 50px, and background color to dark.  
-Line 4: .sidebar:hover expands the width to 290px when hovered.  
-Line 5: .sidebar ul li a{...} styles sidebar links with flex layout, white text, and hover transitions.  
-Line 6: .sidebar ul li a::before adds a turquoise bar effect on hover using transform animation.  
-Line 7: #navbar{...} styles the top navigation bar with dark background, flexbox, and centered items.  
-Line 8: #navbar a styles links with padding, white text, and orange hover effect.  
-Line 9: h1,h2,h3,caption{...} apply a black color with a thin white text-shadow outline.  
-Line 10: #student styles the profile image to be round with 200px width.  
-Line 11: #mosh styles the YouTube channel icon to be round with 100px width.  
-Line 12: table{...} sets black background and full width, with grey header and lightgrey rows.  
-Line 13: .iframe styles embedded videos with 560x315px size and dashed white border.  
-Line 14: .textcenter aligns text to the center.  
-Line 15: .juststaycenterman uses flexbox to horizontally center items with padding.  
-Line 16: section{...} colors text white and adds padding around sections.  
-Line 17: footer{...} sets white text, left alignment, and turquoise links.  
+HTML Explanation
+
+Line 1: <!DOCTYPE html>- Declares this document as HTML5.
+Line 2: <html lang="en"> - Opens the HTML document and sets the language to English.
+Line 3: <head> - Starts the head section (metadata, resources).
+Line 4: <meta charset="UTF-8" /> - Sets character encoding to UTF-8 (universal).
+Line 5: <meta name="viewport" content="width=device-width, initial-scale=1.0" /> - Makes the page responsive on all screen sizes.
+Line 6: <meta name="description" content="This is Yew Zhian's Profile Page" /> - Provides a description for search engines/browsers.
+Line 7: <link rel="stylesheet" href="YEW_ZHIAN.css" /> - Connects the external CSS file.
+Line 8: <link rel="icon" type="image/x-icon" href="images/dog.png" /> - Sets favicon for the browser tab.
+Line 9: <title>Yew Zhian's Profile</title> - Title shown on the browser tab.
+Line 10: </head> - Ends the head section.
+Line 11: <body> - Starts the body (visible content).
+
+Navigation Bar
+Line 12: <nav id="navbar"> - Opens the top navigation bar.
+Line 13: <div class="overlay"></div> - Overlay element (empty div, can be styled).
+Line 14–21: <a href="..."> ... </a> - Navigation links (HOME, NAUFAL, EE JIE, YEW ZHIAN, DINASH, RESOURCES, FEEDBACK).
+Line 22: </nav> - Ends navigation bar.
+
+Header Title
+Line 23: <h1 class="textcenter">Welcome to Yew Zhian's Profile</h1> - Main page heading, centered.
+
+Sidebar Navigation
+Line 24: <div class="sidebar"> - Opens sidebar container.
+Line 25: <ul> - Unordered list to hold sidebar items.
+Line 26–72: <li> ... </li> - Each list item has links to page sections: Profile, About Me, Goals, Skills, Journey, Future Plan, YouTube Channel, Video, Useful Links, Bottom.
+Line 73: </ul> - Closes sidebar list.
+Line 74: </div> - Ends sidebar.
+
+Main Content
+Line 75: <main> - Opens main content area.
+
+About Me Section
+Line 76–93: <section class="textcenter"> ... </section> - About Me section with photo, heading, and introduction paragraph.
+
+Goals & Achievements Section
+Line 95–141: <section> ... </section> - Lists learning goals (HTML, CSS, Python, JavaScript, C++, computer science concepts, projects, competitions) and achievements.
+
+Skills Section
+Line 143–157: <section> ... </section> - Describes technical skills (HTML, CSS, Python, JavaScript, tools like Clickup & VS Code, problem-solving, teamwork, communication).
+
+Learning Journey Section
+Line 159–172: <section> ... </section> - Reflection paragraph describing learning experiences and progress.
+
+Future Plan Section
+Line 174–206: <section> ... </section> - A 22-week plan table for becoming a beginner front-end developer (HTML & CSS, JavaScript, React, Git).
+
+YouTube Channel Section
+Line 208–226: <section> ... </section> - Favorite YouTube channel (Programming with Mosh) with image, link, and embedded YouTube video.
+
+Video Section
+Line 228–237: <section> ... </section> - Another embedded video to understand programming basics.
+
+Useful Links Section
+Line 239–260: <section> ... </section> - Provides external learning resources (Coursera, Udemy, FreeCodeCamp, Codecademy).
+
+Footer Section
+Line 261: </main> - Ends main content.
+Line 262: <footer> - Starts footer.
+Line 263–268: <h2>References</h2> ... - Copyright, references, and contact details.
+Line 269: </footer> - Closes footer.
+Line 270: </body> - Closes body.
+Line 271: </html> - Closes HTML document. 
+
+/*YEW_ZHIAN.css*/
+CSS Explanation (YEW_ZHIAN.css)
+
+Line 1: * { margin: 0; padding: 0; box-sizing: border-box; } - Resets default browser spacing, ensures consistent element sizing.
+Line 2: body { font-family: Arial, sans-serif; background-color: #f5f5f5; color: #333; } - Sets page font, background color (light grey), and text color (dark grey).
+Line 3: #navbar { display: flex; justify-content: center; background-color: #333; padding: 10px 0; position: sticky; top: 0; z-index: 1000; } - Styles navbar: dark background, items centered, sticky on top.
+Line 4: #navbar a { color: white; text-decoration: none; padding: 10px 15px; transition: background 0.3s; } - White navbar links, spacing, smooth hover effect.
+Line 5: #navbar a:hover { background-color: #555; border-radius: 5px; } - Darker background with rounded corners on hover.
+Line 6: .textcenter { text-align: center; margin: 20px 0; } - Centers text with spacing above and below.
+Line 7: .sidebar { position: fixed; left: 0; top: 60px; width: 200px; height: 100%; background: #444; padding-top: 20px; } - Sidebar fixed on the left, below navbar, dark background.
+Line 8: .sidebar ul { list-style: none; padding: 0; } - Removes bullet points from sidebar list.
+Line 9: .sidebar ul li { margin: 10px 0; } - Adds space between sidebar items.
+Line 10: .sidebar ul li a { color: white; text-decoration: none; display: block; padding: 10px; transition: background 0.3s; } - Sidebar links are white, block style, clickable area with padding.
+Line 11: .sidebar ul li a:hover { background: #666; border-radius: 5px; } - Darker hover effect with rounded corners.
+Line 12: main { margin-left: 220px; padding: 20px; } - Pushes main content to the right (space for sidebar), adds padding.
+Line 13: section { margin-bottom: 40px; } - Adds space after each section.
+Line 14: section h2 { margin-bottom: 15px; color: #222; } - Section headings with darker text and spacing.
+Line 15: img { max-width: 100%; height: auto; border-radius: 10px; } - Makes images responsive and rounded.
+Line 16: .iframe iframe { width: 100%; height: 400px; border-radius: 10px; } - Embedded videos take full width, fixed height, rounded corners.
+Line 17: table { width: 100%; border-collapse: collapse; margin: 20px 0; } - Tables stretch full width, no gaps between borders.
+Line 18: table, th, td { border: 1px solid #ccc; } - Light grey border for table and cells.
+Line 19: th, td { padding: 10px; text-align: center; } - Spacing inside table cells, text centered.
+Line 20: th { background: #eee; } - Table header has light grey background.
+Line 21: footer { background: #333; color: white; text-align: center; padding: 20px; } - Footer with dark background, white text, centered.
+Line 22: footer a { color: lightblue; text-decoration: none; } - Footer links in light blue.
+Line 23: footer a:hover { text-decoration: underline; } - Footer links underline on hover.
