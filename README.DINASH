@@ -1,3 +1,4 @@
+<!--DINASH.html-->
 Line 1: <!DOCTYPE html> → Declares HTML5 document
 Line 2: <html lang="en"> → Opens HTML, language set to English
 Line 3: <head> → Starts head section
@@ -36,7 +37,7 @@ Line 67–69: <footer> ... </footer> → Footer with copyright
 Line 70: </body> → Closes body
 Line 71: </html> → Closes HTML document
 
-CSS
+<!--Dinash.css-->
 Line 1 → /* ===== General Page Styling ===== */ → Comment label.
 Line 2 → body { → Start styling the whole page.
 Line 3 → font-family: 'Segoe UI', Arial, sans-serif; → Use clean, modern fonts.
