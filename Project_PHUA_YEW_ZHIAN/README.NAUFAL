@@ -1,0 +1,179 @@
+<-----html----->
+line 2 is the coding to link my html to css files
+line 4 : coding to add picture
+line 6-8 : code to import font
+line 11: the code open of head
+line 12: webpage title
+line 18: is the grouping section for my banner
+line 20: grouping section for my navigation bar
+line 22-28: the bullet point for my navigation bar
+line 32: the grouping section for my heading text called "text-box"
+line 32-34: the content of my text box 
+line 35: "a href="#second-page" is the linking coding to my second page if pressed,
+         "class="hero-btn">click to know me more" is the button that will bring you to my "second page" if pressed
+line 40: "section class="second-page" is the grouping
+         "id="second-page" is the code that brings you when you hit the button i mentioned earlier
+line 45: the grouping section for everything inside of it
+line 48,53,58: "div class="about-col" is the grouping for my collumn 
+line 68: grouping section for my 3rd page
+line 69: grouping section for "skill" containing heading and paragraph
+line 75-107: section for my "table"
+110-133: section for the university part
+line 114: section for campus-col containing the university image that was shown in the website
+line 118-120: section "course" containing heading for the 'course offerred'
+line 122-129: section "list" for bullet point 
+line 131: closing section for "university" class
+line 134-138: section for embbed containing heading,paragraph and embbed link yt video
+line 140-143: section for footer containing references, group name
+
+
+<-----css----->
+* : basically the body containing imported font from google font and scroll behaviour so when you click the "click to know me better" 
+     it will scroll you to the designated section smoothly. theres original margin and padding too, set to 0px/%
+.banner
+    min-height: set the minimum height so it wont go lower than 100vh
+    width: set to max out the top space so no other code or text will invade their space.
+    background-image:simply add wanted image, linear-gradient: set an choice color overlay on top of the background image
+    background-position: make it center
+    background-size: displayed the background image to fully cover the website size
+    position: relative so it would be static in place and wont move when you scroll down in the website
+
+nav
+    display: flex; making the row-like list to be side by side become collumn-like
+    padding: just like margin but set internally
+    justify-content: space-evenly so it fit the top section evenly and wont cramp into each others
+    align-items: center; making it sit in the center
+
+.nav-links
+    flex: 1; make it one dimensional
+    text-align: center; make the text in the center
+
+.nav-links ul li{
+    list-style: none; set the style to none
+    display: inline-block; make the display appear on the same line "comllumn-like"
+    padding: 8px 12px; padding is like margin, its like putting invinsible block next/around them 
+    position: relative so it would be static in place and wont move when you scroll down in the website
+}
+
+.nav-links ul li a
+    color: #fff; set the text color
+    text-decoration: none;
+
+.nav-links ul li::after
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff8b2c;
+    display: block;
+    margin: auto;
+    -------> ALL OF THIS CREATE THE LINE ANIMATION WHEN U TOUCH THE TEXT (*try it ;)
+
+.nav-links ul li:hover::after     (HOVER IS LIKE OVERLAY ON TOP OF THE CHOSEN CLASS)
+    width: 100%, line leght to the fullest
+    transition: 0.5s; set the animation to delay 0.5 second
+
+.text-box
+    width: make the text 90% bigger
+    position: absolute; so it stay in place
+    top: 50%;  >
+    left: 50%;  set the position in the center of the website current page
+    transform: translate(-50%,-50%);  same as the above but plays with left and right side
+    text-align: center; make the text in the center
+
+.text-box h1{
+    font-size: 70px; set the text size bigger
+}
+
+.text-box p
+    margin: 30px 50px; put an invisibleblock-like at the left and right side
+    font-size: 26px; set the text bigger
+    color: #fff; plays with the color
+
+.hero-btn
+    display: inline-block; explain earlier line 53 
+    text-decoration: none; self explained
+    color: #fff; set the text to color white
+    border: 1px solid #ff8b2c; create a orage border around the button 
+    padding: 12px 34px; explained earlier
+    font-size: 13px; explained 
+    border-radius: 20px; make the box corner curvy
+    background: transparent; make the inside button transparent
+    position: relative; make it in normal document flow
+    cursor: pointer; make it "actives" when theres pointer touches it
+
+.hero-btn:hover
+    border: 1px solid #ff8b2c;
+    background: #ff8b2c;
+    transition: 1s;
+    ------->WHEN "ACTIVES" IT MAKE THE BOX FILLED IN WITH COLOR OF CHOICE
+
+.second-page
+    text-align: center;
+    padding: 70px 0px 30px 30px;
+    margin-top: auto;
+    background-color: #0d1028 !important 
+    ------->KIND OF LIKE "BODY" FOR SECOND PAGE
+
+.row
+    margin-top: auto;
+    display: flex; makes it responsive-able and comllumn-like (side by side)
+    justify-content: space-between; make even space between each box
+
+.about-col
+flex-basis: 31%; set starting size for "display-flex"
+background: #ffa865; background color for the box
+border-radius: 10px; curved edge
+margin-bottom: 5%; explained
+padding: 20px 12px; explained
+box-sizing: border-box; modifies the box total width and height
+
+.about-col p
+    text-align: center; explained
+    margin: 15px; explained
+    font-weight: 500; make the font-text thicker
+
+.about-col:hover
+    box-shadow: 0 0 60px 0 rgba(255, 162, 99, 0.7); creates shadow when a cursor upon it (please give it a try)
+    transition: 0.3s all make the shadow delay 0.3s
+
+.third-page
+    text-align: center;
+    padding: 70px 0px 30px 30px;
+    margin-top: auto;
+    background-color: #0d1028;
+    ------->KIND OF LIKE "BODY" FOR THIRD PAGE
+
+
+<-----FROM HERE AND NOW I WONT EXPLAIN WHAT HAS BEEN EXPLAINED EARLIER TO MAKE IT LESS EASIER FOR MADAM TO READ WHAT HASNT BEEN EXPLAINED----->
+
+.table
+    align-items: center; align the item in the center 
+    flex-direction: column;   set comllumn
+    padding: 70px 0px 30px 30px;   set padding up, down, left, and right
+
+.my-table 
+  max-width: 820px;   SET WIDTH LIMIT
+  overflow: hidden;   ANY OVERFLOW OUTSIDE THE BOX WILL BE hidden
+
+.my-table thead th
+  text-align: left;  SET THE TEXT IN "TH" STICK TO LEFT SIDE OF THE TABLE
+
+.my-table tbody tr:last-child td 
+  border-bottom: none;
+  -------> MAKE THE BOTTOM TABLE HAS NO BORDER
+
+  li::before 
+    display: inline-block; 
+    width: 25px;
+    height: 25px;
+    content:'' ;
+    background-image: url('images/starbg.png') ;
+    background-position: center;
+    background-size: cover;
+    ------->MAKE ALL MY BULLET POINT BECOME AN IMAGE 
+
+
+  ------->EVERYTHING IN "UNIVERSITY SECTION AND FOOTER SECTION" HAS BEEN EXPLAINED
+
+  ------->I hope you are happy with how dedicated i am in this website that i make with no help of AI AT ALL, 
+          all tutorial from codecamy and youtube. :)
