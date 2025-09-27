@@ -1,3 +1,4 @@
+YEW_ZHIAN.html
 Line 1: <!DOCTYPE html> defines this file as an HTML5 document.  
 Line 2: <html lang="en"> opens the HTML document, language is set to English.  
 Line 3: <head> starts the head section, which contains metadata and styles.  
@@ -33,7 +34,7 @@ Line 32: Footer includes References, Copyright, YouTube reference, and Contact e
 Line 33: </footer> closes the footer.  
 Line 34: </body> ends the page body.  
 Line 35: </html> ends the HTML document.  
-CSS
+YEW_ZHIAN.css
 Line 1: CSS begins with *{...} to reset styles, set global font, enable smooth scrolling, and add letter spacing.  
 Line 2: body{...} sets the background image, centers it, covers the screen, and adds padding.  
 Line 3: .sidebar{...} fixes the sidebar to the left, sets default width to 50px, and background color to dark.  
