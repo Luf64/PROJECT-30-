@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,serif;
+  scroll-behavior: smooth;
+  letter-spacing:1px;
+}
+body{
+  background: url("images/sus.jpeg") no-repeat center fixed;
+  background-size: cover;
+  padding-left:20px;
+  padding-right:50px;
+  text-justify:inter-word;
+}
+.sidebar {
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width: 50px; /*sidebar size when close*/
+  background: #0b0b0f;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  white-space:nowrap;
+}
+.sidebar:hover {
+  width: 200px; /*sidebar size*/
+}
+.sidebar ul{
+  list-style: none;
+  padding:0;
+  margin:0
+}
+h2{
+  scroll-margin-top:20px; /*add this bc of 80px at body*/
+}
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 8px 10px; /*padding inside the box*/
+  transition: background 0.3s ease, color 0.3s ease;
+  position:relative;
+}
+.sidebar ul li a::before {
+  content: "";
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 4px;
+  background: #06e6e6;
+  transform: scaleY(0); /*Hover highlight bar*/
+  transition: transform 0.5s ease;
+}
+.sidebar ul li:hover a::before {
+  transform: scaleY(1);
+}
+.sidebar ul li a .icon {
+  min-width: 32px;
+  font-size: 17px;
+  text-align: center;
+  padding:20px;
+}
+.sidebar ul li a .text {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing:0.5px;
+}
+nav,main,footer,h1{
+  margin-left:30px;
+  padding-left:50px;
+  transition: margin-left 0.3 ease;
+}
+#navbar{
+  background-size:cover;
+  background-color:#1f1f2e;
+  background-position:top;
+  display:flex;
+  flex-wrap:wrap;
+  top:0;
+  width:104%;
+  padding-left:0px;
+  justify-content: center;
+}
+#navbar a{
+  margin:0 15px;
+  text-decoration: none;
+  color:white;
+  padding:20px 0px 20px 0px;
+}
+#navbar a:hover{
+  color:orange;
+}
+h1,h2,h3{
+  color: black;
+  text-shadow:2px 0 #fff,
+              -2px 0 #fff,
+              1px 1px #fff,
+              -1px -1px #fff,
+              1px -1px #fff,
+              -1px 1px #fff;
+  /*shows a thin white outline*/
+}
+h4{
+  color:burlywood;
+}
+
+footer{
+  color:white;
+  text-align: left;
+}
+h1{
+  padding-top:20px;
+}
+h1,h2,h3,h4{
+  text-align:left;
+}
+section p{
+  color:white;
+}
+div ul li a img{
+  width:25px;
+  height:auto;
+}
+.resources{
+  max-width:65%;
+  height:auto;
+  padding-left:80px;
+  padding-bottom:10px;
+}
+a{
+  text-decoration: none;
+  color:turquoise;
+}
